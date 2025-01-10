@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>holl</title>
+    <style>
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Преветствую!</h1>
+<p>Вы новый пользователь? Если нет то прошу ввести имя и пороль для входа.
+В противном случае требуется регистрация, ОБЯЗАТЕЛЬНО!</p>
+<form action="/enter">
+    <input type="text" name="name" placeholder="имя сюда" required>
+        <h2>{{result_from_dt[0]}}</h2>
+    <input type="password" name="password" placeholder="пароль сюда" куrequired>
+        <h2>{{result_from_dt[1]}}</h2>
+    <button type="submit">Вход</button>
+</form>
+<p>примечание!: после регистрации мы отправим вас обратно на эту страницу и вам потребуется войти в акаунт</p>
+<form action="/tu_reg">
+    <button type="submit" >Регистрация</button>
+</form>
+</body>
+</html>

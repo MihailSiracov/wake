@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="static/additional_settings.css">
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        h2 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form action="/reg">
+    <input type="text" name="name" placeholder="введите имя" required>
+            <h2>{{result_from_dt[0]}}</h2>
+    <input type="password" name="password" placeholder="пороль" required>
+            <h2>{{result_from_dt[1]}}</h2>
+    <input type="submit" value="Зарегистрироватся">
+    <h3>ВНИМАНИЕ!: ЕСЛИ РЕГИСТРАЦИЯ ПРОЙДЁТ УСПЕШНО, ВЫ ОТПРАВИТЕСЬ НА ГЛАВНУЮ СТРАНИЦУ ДЛЯ ВХОДА! не пугайтесь)</h3>
+</form>
+</body>
+</html>
